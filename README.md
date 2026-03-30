@@ -25,5 +25,5 @@
 ```Built February 2026```
 
 <p align="none">
-  <img src="https://github.com/CFlory-Programming/AdvProgrammingGroupProject/blob/main/images/KonQuestDemo.png?raw=true" alt="Logo" width="300"/>
+  <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/KonQuestDemo.png?raw=true" alt="Logo" width="300"/>
 </p>
