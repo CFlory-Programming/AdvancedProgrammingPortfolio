@@ -12,5 +12,18 @@
 ```Built March 2026```
 
 <p align="none">
-  <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/Demo.png?raw=true" alt="Logo" width="300"/>
+  <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/CarbonCopyDemo.png?raw=true" alt="Logo" width="300"/>
+</p>
+
+##
+<p align="none">
+  <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/KonQuestLogo.png?raw=true" alt="Logo" width="200"/>
+</p>
+
+**[KonQuest](https://github.com/CFlory-Programming/AdvProgrammingGroupProject "KonQuest Repository")**
+
+```Built February 2026```
+
+<p align="none">
+  <img src="https://github.com/CFlory-Programming/AdvProgrammingGroupProject/blob/main/images/KonQuestDemo.png?raw=true" alt="Logo" width="300"/>
 </p>
