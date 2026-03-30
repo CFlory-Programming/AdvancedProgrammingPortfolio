@@ -3,7 +3,7 @@
 # Projects:
 
 ##
-<p align="center">
+<p align="none">
   <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/CarbonCopyLogo.png?raw=true" alt="Logo" width="200"/>
 </p>
 
