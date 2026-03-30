@@ -4,7 +4,7 @@
 
 ##
 <p align="none">
-  <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/CarbonCopyLogo.png?raw=true" alt="Logo" width="100"/>
+  <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/CarbonCopyLogo.png?raw=true" alt="Logo" width="200"/>
 </p>
 
 **[CarbonCopy(CC)](https://github.com/CFlory-Programming/AdvProgrammingIndividualProject "CarbonCopy Repository")**
