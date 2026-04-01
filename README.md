@@ -18,6 +18,10 @@
     - Sorting and Filtering
     - Recursion
     - Enhanced For Loops
+ 
+  * **Libraries and Packages Used:**
+    - SimpleDateFormat
+    - Processing
 
 <p align="none">
   <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/CarbonCopyDemo.png?raw=true" alt="Logo" width="300"/>
@@ -38,6 +42,9 @@
     - GUI Controls
     - Recursion
     - Enhanced For Loops
+ 
+* **Libraries and Packages Used:**
+    - Processing
 
 <p align="none">
   <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/KonQuestDemo.png?raw=true" alt="Logo" width="300"/>
