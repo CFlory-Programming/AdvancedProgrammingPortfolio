@@ -9,7 +9,15 @@
 
 **[CarbonCopy(CC)](https://github.com/CFlory-Programming/AdvProgrammingIndividualProject "CarbonCopy Repository")**
 
-```Built March 2026```
+```Completed March 2026```
+
+* **Target Concepts:**
+    - I/O and Excpetion Handling
+    - Collections
+    - GUI Controls
+    - Sorting and Filtering
+    - Recursion
+    - Enhanced For Loops
 
 <p align="none">
   <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/CarbonCopyDemo.png?raw=true" alt="Logo" width="300"/>
@@ -22,7 +30,14 @@
 
 **[KonQuest](https://github.com/CFlory-Programming/AdvProgrammingGroupProject "KonQuest Repository")**
 
-```Built February 2026```
+```Completed February 2026```
+
+* **Target Concepts:**
+    - I/O and Excpetion Handling
+    - Collections
+    - GUI Controls
+    - Recursion
+    - Enhanced For Loops
 
 <p align="none">
   <img src="https://github.com/CFlory-Programming/AdvancedProgrammingPortfolio/blob/main/images/KonQuestDemo.png?raw=true" alt="Logo" width="300"/>
