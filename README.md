@@ -19,7 +19,7 @@
     - Recursion
     - Enhanced For Loops
  
-  * **Libraries and Packages Used:**
+* **Libraries and Packages Used:**
     - SimpleDateFormat
     - Processing
 
