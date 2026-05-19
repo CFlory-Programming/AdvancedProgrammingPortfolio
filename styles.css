@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #12181b; /* Deep background for navbar/footer */
-    --secondary-color: #38bdf8; /* Cyan/Blue accent */
-    --bg-color: #0f172a; /* Sleek dark blue/grey background */
-    --text-color: #e2e8f0; /* Light grey text */
-    --card-bg: #1e293b; /* Slightly lighter card background */
-    --code-bg: #0d1117; /* Very dark background for code blocks */
+    --primary-color: #12181b; 
+    --secondary-color: #38bdf8; 
+    --bg-color: #0f172a; 
+    --text-color: #e2e8f0; 
+    --card-bg: #1e293b; 
+    --code-bg: #0d1117; 
 }
 
 * {
@@ -88,7 +88,7 @@ body {
 }
 
 .bg-light {
-    background-color: #0b1120; /* Darker alternating background */
+    background-color: #0b1120; 
 }
 
 h2 {
@@ -165,14 +165,19 @@ summary {
     width: 100%;
     height: 200px;
     background-color: #0d1117;
-    border: 2px dashed #475569;
+    border: 2px solid #475569;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #64748b;
     margin-bottom: 20px;
-    font-style: italic;
+    overflow: hidden;
+}
+
+.cert-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Grid for Projects */
@@ -208,9 +213,14 @@ summary {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #475569;
-    font-weight: bold;
     border-bottom: 1px solid #334155;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the box properly */
 }
 
 .project-card h3 {
@@ -295,13 +305,13 @@ code {
 }
 
 /* Syntax Highlighting Colors */
-.keyword { color: #ff7b72; font-weight: bold; } /* Red/Pink for keywords like public, class */
-.function { color: #d2a8ff; } /* Purple for function/class names */
-.type { color: #79c0ff; } /* Blue for types like String, System */
-.string { color: #a5d6ff; } /* Light blue for strings */
-.comment { color: #8b949e; font-style: italic; } /* Grey for comments */
-.number { color: #79c0ff; } /* Blue for numbers */
-.literal { color: #79c0ff; } /* Blue for true/false */
+.keyword { color: #ff7b72; font-weight: bold; } 
+.function { color: #d2a8ff; } 
+.type { color: #79c0ff; } 
+.string { color: #a5d6ff; } 
+.comment { color: #8b949e; font-style: italic; } 
+.number { color: #79c0ff; } 
+.literal { color: #79c0ff; } 
 
 /* Footer */
 footer {
