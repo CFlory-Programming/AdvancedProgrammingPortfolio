@@ -10,7 +10,7 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
         // Scroll smoothly to the target section
         if (targetSection) {
             window.scrollTo({
-                top: targetSection.offsetTop - 70, // Adjusts for the thicker sticky navbar height
+                top: targetSection.offsetTop - 70, // Adjusts for the sticky navbar height
                 behavior: 'smooth'
             });
         }
