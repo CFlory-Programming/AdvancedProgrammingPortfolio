@@ -137,7 +137,7 @@
         <h2>Certifications & Awards</h2>
         <div class="grid-container">
             <div class="card cert-card">
-            <div class="cert-image-placeholder">
+                <div class="cert-image-placeholder">
                     <img src="images/APCSA.png" alt="AP Computer Science A">
                 </div>
                 <h3>AP Computer Science A</h3>
@@ -393,64 +393,63 @@
         <div class="code-container">
             <div class="card code-card">
                 <h3>Classes and Objects</h3>
-                <pre><code><span class="comment">// From: CarbonCopy (CC) - Task Management Implementation</span>
-<span class="keyword">public class</span> <span class="function">Task</span> {
-    <span class="keyword">private</span> <span class="type">String</span> title;
-    <span class="keyword">private boolean</span> isComplete;
+                <pre><code><span class="comment">// From: CarbonCopy (CC) - File Architecture Core</span>
+<span class="keyword">public class</span> <span class="function">FileScanner</span> {
+    <span class="keyword">public</span> <span class="type">String</span> rootPath;
+    <span class="keyword">public boolean</span> isRecursive;
 
-    <span class="keyword">public</span> <span class="function">Task</span>(<span class="type">String</span> title) {
-        <span class="keyword">this</span>.title = title;
-        <span class="keyword">this</span>.isComplete = <span class="literal">false</span>;
+    <span class="keyword">private int</span> totalFiles = <span class="number">0</span>;
+    <span class="keyword">private int</span> scannedFiles = <span class="number">0</span>;
+
+    <span class="keyword">public interface</span> <span class="type">ScanProgressListener</span> {
+        <span class="keyword">public void</span> <span class="function">onProgressUpdate</span>(<span class="keyword">float</span> currentPercent, <span class="keyword">int</span> scannedFiles, <span class="keyword">int</span> totalFiles);
     }
 }</code></pre>
             </div>
 
             <div class="card code-card">
                 <h3>Arrays / ArrayLists</h3>
-                <pre><code><span class="comment">// From: AP CSA Group Inventory System</span>
-<span class="type">ArrayList</span>&lt;<span class="type">String</span>&gt; inventory = <span class="keyword">new</span> <span class="type">ArrayList</span>&lt;&gt;();
-inventory.<span class="function">add</span>(<span class="string">"Server Unit A"</span>);
-inventory.<span class="function">add</span>(<span class="string">"Network Switch"</span>);
+                <pre><code><span class="comment">// From: CarbonCopy (CC) - Duplicate Sorting & Content Map Integration</span>
+<span class="keyword">for</span> (<span class="type">File</span> file : files) {
+    <span class="keyword">if</span> (file.<span class="function">isFile</span>() && <span class="function">isSupportedFileType</span>(file.<span class="function">getName</span>())) {
+        <span class="keyword">try</span> {
+            <span class="keyword">byte</span>[] fileBytes = <span class="type">Files</span>.<span class="function">readAllBytes</span>(file.<span class="function">toPath</span>());
+            <span class="keyword">long</span> fileSize = file.<span class="function">length</span>();
+            <span class="keyword">long</span> lastModified = file.<span class="function">lastModified</span>();
 
-<span class="keyword">for</span> (<span class="type">String</span> item : inventory) {
-    <span class="type">System</span>.out.<span class="function">println</span>(item);
+            <span class="type">String</span> contentKey = fileSize + <span class="string">"|"</span> + java.util.Arrays.<span class="function">toString</span>(fileBytes);
+            <span class="type">FileInfo</span> fileInfo = <span class="keyword">new</span> <span class="type">FileInfo</span>(file, fileSize, lastModified);
+
+            <span class="keyword">if</span> (duplicateFiles.<span class="function">containsKey</span>(contentKey)) {
+                duplicateFiles.<span class="function">get</span>(contentKey).<span class="function">add</span>(fileInfo);
+            } <span class="keyword">else</span> {
+                <span class="type">List</span>&lt;<span class="type">FileInfo</span>&gt; fileList = <span class="keyword">new</span> <span class="type">ArrayList</span>&lt;&gt;();
+                fileList.<span class="function">add</span>(fileInfo);
+                duplicateFiles.<span class="function">put</span>(contentKey, fileList);
+            }
+        } <span class="keyword">catch</span> (<span class="type">Exception</span> e) { <span class="comment">/* Exception safety handling */</span> }
+    }
 }</code></pre>
             </div>
 
             <div class="card code-card">
                 <h3>Inheritance / Polymorphism</h3>
-                <pre><code><span class="comment">// From: KonQuest - Game Entity Architecture</span>
-<span class="keyword">public class</span> <span class="function">Hero</span> <span class="keyword">extends</span> <span class="type">Entity</span> {
-    <span class="keyword">@Override</span>
-    <span class="keyword">public void</span> <span class="function">performAction</span>() {
-        <span class="type">System</span>.out.<span class="function">println</span>(<span class="string">"Hero attacks with sword!"</span>);
+                <pre><code><span class="comment">// From: KonQuest - Polymorphic Game Character Inheritance</span>
+<span class="keyword">public class</span> <span class="function">Lizard</span> <span class="keyword">extends</span> <span class="type">Enemy</span> {
+    <span class="keyword">boolean</span> direction;
+    
+    <span class="keyword">public</span> <span class="function">Lizard</span>(<span class="keyword">int</span> x, <span class="keyword">int</span> y) {
+        <span class="keyword">super</span>(x, y);
+        height = <span class="number">50</span>;
+        width = <span class="number">100</span>;
+        <span class="keyword">this</span>.x = x;
+        <span class="keyword">this</span>.y = y;
     }
-}</code></pre>
-            </div>
 
-            <div class="card code-card">
-                <h3>Searching / Sorting</h3>
-                <pre><code><span class="comment">// From: CarbonCopy (CC) - Efficient Array Searching (Big-O Log N)</span>
-<span class="keyword">public int</span> <span class="function">binarySearch</span>(<span class="keyword">int</span>[] dataSet, <span class="keyword">int</span> targetId) {
-    <span class="keyword">int</span> left = <span class="number">0</span>, right = dataSet.length - <span class="number">1</span>;
-    <span class="keyword">while</span> (left <= right) {
-        <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;
-        <span class="keyword">if</span> (dataSet[mid] == targetId) <span class="keyword">return</span> mid;
-        <span class="keyword">if</span> (dataSet[mid] < targetId) left = mid + <span class="number">1</span>;
-        <span class="keyword">else</span> right = mid - <span class="number">1</span>;
+    <span class="keyword">public</span> <span class="function">Lizard</span>(<span class="type">Lizard</span> other) {
+        <span class="keyword">super</span>(other);
+        <span class="keyword">this</span>.direction = other.direction;
     }
-    <span class="keyword">return</span> -<span class="number">1</span>;
-}</code></pre>
-            </div>
-
-            <div class="card code-card">
-                <h3>Recursion</h3>
-                <pre><code><span class="comment">// From: ChooseYourOwnAdventure - Path Branching Logic</span>
-<span class="keyword">public int</span> <span class="function">calculatePathDepth</span>(<span class="type">Node</span> currentPath) {
-    <span class="keyword">if</span> (currentPath.isEndNode()) {
-        <span class="keyword">return</span> <span class="number">1</span>; <span class="comment">// Base case</span>
-    }
-    <span class="keyword">return</span> <span class="number">1</span> + <span class="function">calculatePathDepth</span>(currentPath.getNextNode());
 }</code></pre>
             </div>
         </div>
